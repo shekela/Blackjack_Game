@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div style="display: flex;">
+
+<div id="OtherPlayer">
+	<img src="back.jpg" id="OppID1">
+    <img src="back.jpg" id="OppID2">
+</div>
+<div style="position: fixed;margin-left: 900px;">   
+    <h1 id="HouseScore" style="color: white;font-size: 50px;font-family: sans-serif;">House score: </h1>		
+</div>
+
+</div>
+
+
+<section style="position: fixed;">
+	<div id="Player">
+
+    <div class="buttons">
+    	<button id="Hit" onclick="hit();">HIT</button>
+	    <button id="Stand" onclick="stand()">STAND</button>
+    </div>
+    <div ID="playerCards">
+		<img src="back.jpg" id="ID2">
+        <img src="back.jpg" id="ID1">
+    </div>
+    <div style="margin-top: 150px;position: fixed;margin-left: 900px;">
+    	 <h1 id="Score" style="color: white;font-size: 50px;font-family: sans-serif;">Score: </h1>
+    </div>
+</div>
+</section>
+
+
+
+
+<h1 style="margin-top:530px;margin-left:20px;color: white;" id="chips"></h1>	
+
+<div style="display:block;margin-left: 600px;margin-top: 300px;position: fixed;">
+	    <div id="BetBlock">
+	    	
+	    </div>
+	    	
+	    <div style="display:flex;" id="BetFlex">
+	    	<div id="BetFlex1"></div>
+	    	<div id="BetFlex2"></div>	
+    	    
+    	    <h1 style="margin-left:-100px;color: white;" id="Betted">1000</h1>
+	    </div>
+
+</div>
+
+
+<h1 style="margin-top:330px;margin-left:1100px;color: white;" id="doneBet">Bet Chips: 0</h1>
+	
+<div style="display:flex;margin-left: 120px;margin-top: 500px;">
+	    <a href="#" onclick="bet100();"  id="C100"><img src="100.png" style="width:130px;height: 100px;"></a>	
+    	<a href="#" onclick="bet50();"  id="C50"><img src="50.png" style="width:130px;height: 100px;"></a>	
+    	<a href="#" onclick="bet20();" id="C20"><img src="20.png" style="width:130px;height: 100px;"></a>
+    	<button style="width:80px;height:80px;border-radius: 50%;margin-top: 10px;" onclick="makeabet();" id="btnn">BET</button>
+</div>
+    	
+
+
+
+
+
+
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
